@@ -4,6 +4,9 @@ array.innerHTML = "The array is: " + stringers;
 document.body.appendChild(array);
 for(let i = 0; i<stringers.length; i++){
     let newdiv = document.createElement("div");
+    newdiv.addEventListener("click",function(){
+        newdiv.style.color = "blue";
+    })
     if(isNaN(stringers[i])) {
         if ((stringers[i]).length > 5) {
             let value = "the length of the string is more than 5.";
